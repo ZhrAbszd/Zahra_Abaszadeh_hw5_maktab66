@@ -1,0 +1,302 @@
+@charset "utf-8";
+:root{
+    --fonts-url: '../fonts/';
+}
+@font-face {
+    font-family: IRANSansFaNum;
+    src: url('../fonts/iransans/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/iransans/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('../fonts/iransans/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('../fonts/iransans/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/iransans/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/iransans/IRANSansWeb.eot');
+    src: url('../fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('../fonts/iransans/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('../fonts/iransans/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/iransans/IRANSansWeb.ttf') format('truetype');
+}
+@font-face {
+    font-family: enFontLight;
+    src: url('../fonts/josefinsans/JosefinSans-Light.eot');
+    src: url('../fonts/josefinsans/JosefinSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/josefinsans/JosefinSans-Light.woff2') format('woff2'),
+    url('../fonts/josefinsans/JosefinSans-Light.woff') format('woff'),
+    url('../fonts/josefinsans/JosefinSans-Light.ttf') format('truetype'),
+    url('../fonts/josefinsans/JosefinSans-Light.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: enFontRegular;
+    src: url('../fonts/josefinsans/JosefinSans-Regular.eot');
+    src: url('../fonts/josefinsans/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/josefinsans/JosefinSans-Regular.woff2') format('woff2'),
+    url('../fonts/josefinsans/JosefinSans-Regular.woff') format('woff'),
+    url('../fonts/josefinsans/JosefinSans-Regular.ttf') format('truetype'),
+    url('../fonts/josefinsans/JosefinSans-Regular.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Material Icons*/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/material-icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../fonts/material-icons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/material-icons/MaterialIcons-Regular.woff') format('woff'),
+    url('../fonts/material-icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Fonts General Setting */
+.fs-12 { font-size: 12px !important; }
+.fs-13 { font-size: 13px !important; }
+.fs-14 { font-size: 14px !important; }
+.fs-15 { font-size: 15px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-17 { font-size: 17px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-19 { font-size: 19px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-28 { font-size: 28px !important; }
+.fs-32 { font-size: 32px !important; }
+.fs-36 { font-size: 36px !important; }
+.fs-40 { font-size: 40px !important; }
+.fs-48 { font-size: 48px !important; }
+.fs-56 { font-size: 56px !important; }
+.fs-64 { font-size: 64px !important; }
+.fs-84 { font-size: 84px !important; }
+
+.faNum{ font-family: IRANSansFaNum !important; }
+.enTextRegular{ font-family: enFontRegular !important; }
+.enTextLight{ font-family: enFontLight !important; }
+
+
+/* Fontello Fonts dfdsv */
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello-icons/fontello.eot?87534176');
+    src: url('../fonts/fontello-icons/fontello.eot?87534176#iefix') format('embedded-opentype'),
+    url('../fonts/fontello-icons/fontello.woff2?87534176') format('woff2'),
+    url('../fonts/fontello-icons/fontello.woff?87534176') format('woff'),
+    url('../fonts/fontello-icons/fontello.ttf?87534176') format('truetype'),
+    url('../fonts/fontello-icons/fontello.svg?87534176#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?87534176#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-beauty:before { content: '\e800'; } /* '' */
+.icon-car:before { content: '\e801'; } /* '' */
+.icon-digital:before { content: '\e802'; } /* '' */
+.icon-home:before { content: '\e803'; } /* '' */
+.icon-sport:before { content: '\e804'; } /* '' */
+.icon-tools:before { content: '\e805'; } /* '' */
+.icon-art:before { content: '\e806'; } /* '' */
+.icon-delivery:before { content: '\e807'; } /* '' */
+.icon-yahoo:before { content: '\e808'; } /* '' */
+.icon-google:before { content: '\e809'; } /* '' */
+.icon-parsinesh:before { content: '\e80a'; } /* '' */
+.icon-dealers:before { content: '\e80b'; } /* '' */
+.icon-company:before { content: '\e80c'; } /* '' */
+.icon-stocks:before { content: '\e80d'; } /* '' */
+.icon-shop:before { content: '\e80e'; } /* '' */
+.icon-onlineshops:before { content: '\e80f'; } /* '' */
+.icon-experts:before { content: '\e810'; } /* '' */
+.icon-quadcopter:before { content: '\e811'; } /* '' */
+.icon-pc:before { content: '\e812'; } /* '' */
+.icon-music-accessories:before { content: '\e813'; } /* '' */
+.icon-harddisk-accessories:before { content: '\e814'; } /* '' */
+.icon-computer-fan:before { content: '\e815'; } /* '' */
+.icon-keyboard:before { content: '\e816'; } /* '' */
+.icon-mouse:before { content: '\e817'; } /* '' */
+.icon-toys-battery:before { content: '\e818'; } /* '' */
+.icon-blade:before { content: '\e819'; } /* '' */
+.icon-electric-motor:before { content: '\e81a'; } /* '' */
+.icon-parts:before { content: '\e81b'; } /* '' */
+.icon-music-player:before { content: '\e81c'; } /* '' */
+.icon-powerbank:before { content: '\e81d'; } /* '' */
+.icon-car-battery:before { content: '\e81e'; } /* '' */
+.icon-charger:before { content: '\e81f'; } /* '' */
+.icon-bluetooth-headphone:before { content: '\e820'; } /* '' */
+.icon-power:before { content: '\e821'; } /* '' */
+.icon-battery:before { content: '\e822'; } /* '' */
+.icon-case:before { content: '\e823'; } /* '' */
+.icon-graphic-card:before { content: '\e824'; } /* '' */
+.icon-ssd:before { content: '\e825'; } /* '' */
+.icon-smart-watch:before { content: '\e826'; } /* '' */
+.icon-monitor:before { content: '\e827'; } /* '' */
+.icon-cable:before { content: '\e828'; } /* '' */
+.icon-ethernet-cable:before { content: '\e829'; } /* '' */
+.icon-modem:before { content: '\e82a'; } /* '' */
+.icon-router:before { content: '\e82b'; } /* '' */
+.icon-printer:before { content: '\e82c'; } /* '' */
+.icon-printer-2:before { content: '\e82d'; } /* '' */
+.icon-3d-printer:before { content: '\e82e'; } /* '' */
+.icon-commercial-printer:before { content: '\e82f'; } /* '' */
+.icon-scanner:before { content: '\e830'; } /* '' */
+.icon-laser-printer:before { content: '\e831'; } /* '' */
+.icon-cdrom:before { content: '\e832'; } /* '' */
+.icon-harddisk:before { content: '\e833'; } /* '' */
+.icon-payment:before { content: '\e834'; } /* '' */
+.icon-cpu:before { content: '\e835'; } /* '' */
+.icon-motherboard:before { content: '\e836'; } /* '' */
+.icon-action-camera:before { content: '\e837'; } /* '' */
+.icon-ip-camera:before { content: '\e838'; } /* '' */
+.icon-camera:before { content: '\e839'; } /* '' */
+.icon-laptop:before { content: '\e83a'; } /* '' */
+.icon-mobile:before { content: '\e83b'; } /* '' */
+.icon-portable-speaker:before { content: '\e83c'; } /* '' */
+.icon-system-speaker:before { content: '\e83d'; } /* '' */
+.icon-tv-soundbar:before { content: '\e83e'; } /* '' */
+.icon-music:before { content: '\e83f'; } /* '' */
+.icon-earphone:before { content: '\e840'; } /* '' */
+.icon-lego:before { content: '\e841'; } /* '' */
+.icon-headphone:before { content: '\e842'; } /* '' */
+.icon-headset:before { content: '\e843'; } /* '' */
+.icon-flash-memory:before { content: '\e844'; } /* '' */
+.icon-sd-card:before { content: '\e845'; } /* '' */
+.icon-microsd-card:before { content: '\e846'; } /* '' */
+.icon-tablet:before { content: '\e847'; } /* '' */
+.icon-ram-reader:before { content: '\e848'; } /* '' */
+.icon-vr-glasses:before { content: '\e849'; } /* '' */
+.icon-cleaner:before { content: '\e84a'; } /* '' */
+.icon-holder:before { content: '\e84b'; } /* '' */
+.icon-monopod:before { content: '\e84c'; } /* '' */
+.icon-screen-protector:before { content: '\e84d'; } /* '' */
+.icon-harddisk-external:before { content: '\e84e'; } /* '' */
+.icon-mobile-accessories:before { content: '\e84f'; } /* '' */
+.icon-storage-accessories:before { content: '\e850'; } /* '' */
+.icon-wifi-network-card:before { content: '\e851'; } /* '' */
+.icon-hard-disk-dock:before { content: '\e852'; } /* '' */
+.icon-fresh:before { content: '\e853'; } /* '' */
+.icon-prices:before { content: '\e854'; } /* '' */
+.icon-statistics:before { content: '\e855'; } /* '' */
+.icon-rocket:before { content: '\e856'; } /* '' */
+.icon-airplane:before { content: '\e857'; } /* '' */
+.icon-instagram:before { content: '\e858'; } /* '' */
+.icon-ads:before { content: '\e859'; } /* '' */
+.icon-tv:before { content: '\e85a'; } /* '' */
+.icon-joystick:before { content: '\e85b'; } /* '' */
+.icon-baby-powder:before { content: '\e85c'; } /* '' */
+.icon-aparat:before { content: '\e85d'; } /* '' */
+.icon-canteen:before { content: '\e85e'; } /* '' */
+.icon-baby-shampoo:before { content: '\e85f'; } /* '' */
+.icon-model:before { content: '\e860'; } /* '' */
+.icon-flask:before { content: '\e861'; } /* '' */
+.icon-fountain-pen:before { content: '\e862'; } /* '' */
+.icon-control-car:before { content: '\e863'; } /* '' */
+.icon-puzzle:before { content: '\e864'; } /* '' */
+.icon-mouse-pad:before { content: '\e865'; } /* '' */
+.icon-laptop-bag:before { content: '\e867'; } /* '' */
+.icon-usb-hub:before { content: '\e868'; } /* '' */
+.icon-network-interface-card:before { content: '\e869'; } /* '' */
+.icon-switch:before { content: '\e86a'; } /* '' */
+.icon-briefcase:before { content: '\e86c'; } /* '' */
+.icon-register:before { content: '\e86d'; } /* '' */
+.icon-helicopter:before { content: '\e86e'; } /* '' */
+.icon-baby-towels:before { content: '\e86f'; } /* '' */
+.icon-mail-tick:before { content: '\e870'; } /* '' */
+.icon-robot:before { content: '\e871'; } /* '' */
+.icon-key:before { content: '\e872'; } /* '' */
+.icon-sign-up:before { content: '\e874'; } /* '' */
+.icon-mobile-cover:before { content: '\e875'; } /* '' */
+.icon-pen:before { content: '\e87c'; } /* '' */
+.icon-information:before { content: '\e87e'; } /* '' */
+.icon-bluetooth-handsfree:before { content: '\e87f'; } /* '' */
+.icon-case-cooler:before { content: '\e880'; } /* '' */
+.icon-multifunction-printer:before { content: '\e882'; } /* '' */
+.icon-ram:before { content: '\e883'; } /* '' */
+.icon-video-card-fan:before { content: '\e884'; } /* '' */
+.icon-wired-headphones:before { content: '\e887'; } /* '' */
+.icon-cpu-cooler:before { content: '\e888'; } /* '' */
+.icon-hard-disk-case:before { content: '\e889'; } /* '' */
+.icon-mouse-keyboard:before { content: '\e88a'; } /* '' */
+.icon-washing-machine:before { content: '\e88b'; } /* '' */
+.icon-refrigerator:before { content: '\e88c'; } /* '' */
+.icon-dishwasher:before { content: '\e88d'; } /* '' */
+.icon-health:before { content: '\e88e'; } /* '' */
+.icon-baby:before { content: '\e88f'; } /* '' */
+.icon-bathtub:before { content: '\e890'; } /* '' */
+.icon-accessories:before { content: '\e891'; } /* '' */
+.icon-office-machine:before { content: '\e892'; } /* '' */
+.icon-computer-accessories:before { content: '\e893'; } /* '' */
+.icon-drone-parts:before { content: '\e894'; } /* '' */
+.icon-network-tools:before { content: '\e895'; } /* '' */
+.icon-clock:before { content: '\e896'; } /* '' */
+.icon-hardware:before { content: '\e897'; } /* '' */
+.icon-email:before { content: '\e898'; } /* '' */
+.icon-password:before { content: '\e899'; } /* '' */
+.icon-error:before { content: '\e89a'; } /* '' */
+.icon-apple:before { content: '\f179'; } /* '' */
+.icon-telegram:before { content: '\f1d8'; } /* '' */
+.icon-facebook:before { content: '\f300'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */

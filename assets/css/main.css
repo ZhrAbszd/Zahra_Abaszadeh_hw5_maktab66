@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: IRANSansFaNum;
+}
+.bg-green {
+    background-color: #45a132;
+    height: 20px;
+}
+.header {
+    box-shadow: 0px 0px 5px 0px #9e9e9e;
+}
+.menu {
+    padding: 2.5rem 0;
+    margin: 0 13rem;
+}
+.menu span {
+    padding-left: 3rem;
+}
+#business {
+    color: white;
+    border-radius: 25px;
+    padding: 4px 15px;
+    background-color: #93c588;
+}
+#shopping{
+    color: white;
+    padding: 10px 40px;
+    background-color: #45a132;
+    border-radius: 25px;
+    margin-right: 24rem;
+}
+.firstSection {
+    height: 68vh;
+}
+h1 {
+    margin-right: 40vw;
+    margin-top: 0;
+    padding-top: 2.5rem;
+    color: #595959;
+}
+.icons {
+    padding-top: 3rem;
+}
+.card {
+    width: 120px;
+    height: 120px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:inline-block;
+    background-color: #ffca1d;
+    border-radius: 50%;  
+    margin-right: 13rem; 
+}
+.card1 {
+    background-image: url("../img/coins.png");
+}
+.card2 {
+    background-image: url("../img/multipleUsers.png");
+}
+.card3 {
+    background-image: url("../img/leaf.png");
+}
+.description {
+    margin-top: 1rem;
+}
+.description span{
+    padding-left: 4.5rem;
+    padding-right: 17.4rem;
+}
+.bestSection {
+    height: 56vh;
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
